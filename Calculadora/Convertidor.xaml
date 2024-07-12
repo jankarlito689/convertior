@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculadora.Convertidor"
+             Visual="Material">
+    <ContentPage.Content>
+        <FlexLayout  BackgroundColor="#fbe5ac"
+                     Direction="Column"
+                     AlignItems="Center"
+                     JustifyContent="Center"
+                     AlignContent="Center">
+            
+            <Label Text="Convertidor de Oz a gr"
+                   FontAttributes="Bold"
+                   FontSize="25"
+                   HorizontalTextAlignment="Center"
+                   TextColor="#565168" />
+            
+            <Entry Placeholder="Onzas a Convertir"
+                   x:Name="Oz"
+                   Keyboard="Numeric"
+                   HorizontalTextAlignment="Center" />
+            
+            <Button Text="Resultado"
+                    Clicked="Button_Clicked"
+                    TextTransform="None"
+                    CornerRadius="10"
+                    BackgroundColor="DarkMagenta" />
+        </FlexLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

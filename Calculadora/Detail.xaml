@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculadora.Detail"
+             Visual="Material">
+    <ContentPage.Content>
+        <StackLayout Background="#fbe5ac">
+            <StackLayout  Padding="20"
+                          Spacing="10"
+                          HorizontalOptions="Center"
+                          VerticalOptions="Center">
+                <!-- Información sobre la aplicación -->
+                <Label Text="Bienvenido a la Calculadora de IMC y Convertidor de Unidades de Medicion"
+                       FontAttributes="Bold"
+                       FontSize="25"
+                       HorizontalTextAlignment="Center"
+                       TextColor="#e460b1" />
+                <Label Text="Esta aplicación te permite calcular tu Índice de Masa Corporal (IMC) y Convertir Unidades de Medicion de manera rápida y sencilla."
+                       FontSize="17"
+                       HorizontalTextAlignment="Center"
+                       TextColor="#a91a7d" />
+                <!-- Información sobre el IMC -->
+                <Label Text="¿Qué es el IMC?"
+                       FontAttributes="Bold"
+                       FontSize="20"
+                       HorizontalTextAlignment="Center"
+                       TextColor="#a91a7d" />
+                <Label Text="El Índice de Masa Corporal (IMC) es una medida que se utiliza para evaluar si una persona tiene un peso saludable para su altura. Se calcula dividiendo el peso en kilogramos por el cuadrado de la altura en metros."
+                       FontSize="17"
+                       HorizontalTextAlignment="Center"
+                       TextColor="#a91a7d" />
+                <Button Text="Saber mi Imc"
+                        Clicked="Button_Clicked"
+                        TextTransform="None"
+                        CornerRadius="10"
+                        BackgroundColor="DarkMagenta" />
+                <!-- Información sobre la conversión de onzas a gramos -->
+                <Label Text="Convertidor de Onzas a Gramos"
+                       FontAttributes="Bold"
+                       FontSize="20"
+                       HorizontalTextAlignment="Center"
+                       TextColor="#a91a7d" />
+                <Label Text="Convierte fácilmente onzas a gramos usando nuestro convertidor. Solo introduce la cantidad de onzas que deseas convertir y obtendrás el resultado en gramos."
+                       FontSize="17"
+                       HorizontalTextAlignment="Center"
+                       TextColor="#a91a7d" />
+                <Button Text="Convertir"
+                        Clicked="Button_Clicked_1"
+                        TextTransform="None"
+                        CornerRadius="10"
+                        BackgroundColor="DarkMagenta" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

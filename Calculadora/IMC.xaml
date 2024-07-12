@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculadora.IMC"
+             Visual="Material">
+    <ContentPage.Content>
+        <FlexLayout BackgroundColor="#fbe5ac"
+                    Direction="Column"
+                    AlignItems="Center"
+                    JustifyContent="Center"
+                    AlignContent="Center">
+            
+            <Label Text="Calcula tu IMC"
+                   FontAttributes="Bold"
+                   FontSize="25"
+                   HorizontalTextAlignment="Center"
+                   TextColor="#565168" />
+            
+            <Entry Placeholder="Altura"
+                   x:Name="Altura"
+                   HorizontalTextAlignment="Center" />
+            <Entry Placeholder="Peso"
+                   x:Name="Peso"
+                   HorizontalTextAlignment="Center" />
+            <Entry Placeholder="Tu IMC"
+                   x:Name="Imc"
+                   IsEnabled="False"
+                   HorizontalTextAlignment="Center"
+                    />
+            
+            <Button Text="Calculado"
+                    Clicked="Button_Clicked"
+                    TextTransform="None"
+                    CornerRadius="10"
+                    BackgroundColor="DarkMagenta" />
+        </FlexLayout>
+    </ContentPage.Content>
+</ContentPage>

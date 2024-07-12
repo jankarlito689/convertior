@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculadora.Master"
+             Title="Master"
+             Visual="Material">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#fbe5ac">
+            <Button Text="Imc"
+                    Clicked="Button_Clicked"
+                    TextTransform="None"
+                    CornerRadius="10"
+                    BackgroundColor="DarkMagenta" />
+            <Button Text="Oz a gramamos"
+                    Clicked="Button_Clicked_1"
+                    TextTransform="None"
+                    CornerRadius="10"
+                    BackgroundColor="DarkMagenta" />
+            <Button Text="(cm a mtr)"
+                    Clicked="Button_Clicked_2"
+                    TextTransform="None"
+                    CornerRadius="10"
+                    BackgroundColor="DarkMagenta" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
